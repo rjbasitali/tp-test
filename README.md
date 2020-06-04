@@ -6,7 +6,7 @@ Program that segregates even and odd numbers in an array and then sorts both sub
 ## Run
 
 
-###Program
+### Program
 
 1. You can run this command line project using intellij IDE
 
@@ -23,7 +23,7 @@ the default input it runs on is {1, 2, 4, 3, 7, 16}, but you can pass an array o
 java Main 1 2 5 3 8 9 4
 ```
 
-###Tests
+### Tests
 
 1. You can run the test cases directly using intellij IDE
 
