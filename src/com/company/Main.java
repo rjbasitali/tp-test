@@ -5,7 +5,15 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-	    int[] arr = {1, 2, 4, 3, 7, 16};
+        int[] arr;
+        if(args.length > 0) {
+            arr = new int[args.length];
+            for (int i = 0; i < args.length; i++) {
+                arr[i] = Integer.parseInt(args[i]);
+            }
+        } else {
+            arr = new int[] {1, 2, 4, 3, 7, 16};
+        }
 	    arrangeAndSort(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + (i + 1 == arr.length ? "" : ", "));
