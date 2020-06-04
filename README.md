@@ -10,9 +10,10 @@ Program that segregates even and odd numbers in an array and then sorts both sub
 
 1. You can run this command line project using intellij IDE
 
-2. Or you can compile and run the Main.java class under src/com/company using command line: 
+2. Or you can compile and run the Main.java class in src folder using command line: 
 
 ```
+cd src
 javac Main.java
 java Main
 ```
@@ -27,15 +28,16 @@ java Main 1 2 5 3 8 9 4
 
 1. You can run the test cases directly using intellij IDE
 
-2. Or you can compile and run the MainTest.java class under tests/com/company using command line,
+2. Or you can compile and run the MainTest.java class in tests folder using command line,
 additionally you'll need to use the [junit-platform-console-standalone-1.6.2.jar](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.6.2/junit-platform-console-standalone-1.6.2.jar
 ) to compile and run junit 5 tests through command line:
 
 ```
+cd tests
 java -jar junit-platform-console-standalone-1.6.2.jar
-	-cp 'tests/com/company'
-	-c com.company.MainTest
+	-cp 'tests'
+	-c MainTPTest
 java -jar junit-platform-console-standalone-1.6.2.jar
-	-cp 'tests/com/company'
-	--select-class com.company.MainTest
+	-cp 'tests'
+	--select-class MainTPTest
 ```

@@ -1,15 +1,14 @@
-package com.company;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class MainTest {
+class MainTPTest {
 
     @Test
     void arrangeAndSort() {
         int[] arr = {11, 5, 17, 19, 9, 0, 16, 1, 15, 6, 10, 13, 14, 12, 7, 3, 8, 2, 18, 4};
-        Main.arrangeAndSort(arr);
+        MainTP.arrangeAndSort(arr);
         int firstEvenIndex = 0;
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] % 2 == 0) {
